@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recepción de Mercancía</title>
+</head>
+
+<body>
+    <h1>Subir Recepción de Mercancía</h1>
+    <form id="upload-form" action="{{ url_for('rp_upload') }}" method="POST" enctype="multipart/form-data">
+        <input type="file" name="file" accept="docs/rp/*" multiple>
+        <input type="submit" value="Subir">
+    </form>
+</body>
+
+</html>
